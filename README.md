@@ -15,7 +15,7 @@ Before you start, make sure you have Node.js and npm installed on your machine.
 
 1. Clone this repository to your local machine.
 bash
-git clone https://github.com/yourusername/orchard_skill_test.git
+git clone https://github.com/danipeeya/orchard_skill_test.git
 
 2. Navigate to the project directory.
 bash
