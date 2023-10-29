@@ -10,9 +10,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body>
-    <div class="container component">
+    <div class="container component"> 
       <div class="row">
         <div class="col-md-4 col-12 col-sm-6 col-xs-6">
           <img src="assets/images/component-01/Image-01.jpg"
@@ -39,55 +40,81 @@
         </div>
 
         <div class="col-md-4 col-sm-12 col-xs-6">
-          <h4 class="text-uppercase">Answer your body's needs</h4>
+          <h4 class="text-uppercase">Answer Your Body's Needs</h4>
           <hr class="divider white-divider">
-          <p>The way ingredients are sourced affects the way we nourish our
+          <p class="mt-4">The way ingredients are sourced affects the way we
+            nourish our
             bodies. Author Mark Schatzer believes for the foods and naturally
             develops an appetite for the foods and nutrients it needs to be
             healthy, but that artificial flavourings are getting in the way.
             This can be reversed by focusing on high-quascrlity ingredients and
             being mindful as your appetite guids you to consume according to
             your body's needs.</p>
-          <p class="text-uppercase mt-5 text-danger strong-caption">Be mindful</p>
-          <p class="strong-caption"> Sourcing local or organic food is a good way to start being more
+          <p class="text-uppercase mt-5 text-danger strong-caption">Be Mindful</p>
+          <p class="lead strong-caption"> Sourcing local or organic food is a
+            good
+            way to start being more
             mindful about what you're cooking and eating.</p>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog"
-      aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
-            <button type="button" class="close" data-dismiss="modal"
-              aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6 mx-auto">
-                <img id="modalImage" src class="img-fluid mx-auto" alt="Image">
-              </div>
+    <div class="row component">
+      <h1 class="col text-uppercase text-center">All The Latest From AEG</h1>
+      <div class="row mt-5">
+        <div class="col-sm-4">
+          <a href><img src="assets/images/component-02/Image-01.jpg"
+              alt="Image 1" class="latest-image"></a>
+          <p class="strong-caption mt-4">Summer Lunch Menu By Mark Best</p>
+          <p class="figure-caption font-weight-light">AEG ambassador Mark Best's
+            summer eats are guaranteed to help you
+            make the most of the warmer weather and entertaining at home.</p>
+          <a class="text-uppercase strong-caption text-white read-more"
+            href="#">Read More</a>
+        </div>
+        <div class="col-sm-4">
+          <a href><img src="assets/images/component-02/Image-02.jpg"
+              alt="Image 2" class="latest-image"></a>
+          <p class="strong-caption mt-4">A traditional Christmas Eve, Mark
+            Best Style</p>
+          <p class="figure-caption font-weight-light">One of Australia's best
+            chefs and AEG ambassador, Mark best, shares his favourite
+            Christmas Eve menu which is sure to impress your guests.</p>
+          <a class="text-uppercase strong-caption text-white read-more"
+            href="#">Read More</a>
+        </div>
+        <div class="col-sm-4">
+          <a href><img src="assets/images/component-02/Image-03.jpg"
+              alt="Image 3" class="latest-image"></a>
+          <p class="strong-caption mt-4">Taking Taste Further</p>
+          <p class="figure-caption font-weight-light">This exclusive cookbook
+            gives you alll the know-how you need. We've designed it to make
+            sure you get the most out of our products - and the best out of
+            your food.</p>
+          <a class="text-uppercase strong-caption text-white read-more"
+            href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog"
+    aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+          <button type="button" class="close" data-dismiss="modal"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <img id="modalImage" src class="img-fluid mx-auto" alt="Image">
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      $(document).ready(function() {
-        $('.img-fluid').on('click', function() {
-          var src = $(this).data('src');
-          $('#modalImage').attr('src', src);
-        });
-    
-        $('#imageModal').on('hidden.bs.modal', function () {
-          // Reset the modal image src when the modal is closed
-          $('#modalImage').attr('src', '');
-        });
-      });
-    </script>
-
   </body>
 </html>
