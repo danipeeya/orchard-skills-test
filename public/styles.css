@@ -3,6 +3,11 @@
     src: url('/assets/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url('/assets/fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
+}
+
 body {
     background-color: #0F1414;
     color: #ffffff;
@@ -12,7 +17,14 @@ body {
         margin: 180px 150px;
     }
 
+    .white-divider {
+        border-color: white;
+    }
+    .strong-caption{
+        font-family: 'OpenSans-SemiBold';
+    }
 }
+
 @media (max-width: 992px) {
     body {
         font-size: 0.8rem;
@@ -24,10 +36,12 @@ body {
         .component {
             margin: 30px;
         }
+
         .big-image {
             max-width: 100%;
             /* Adjust the max height as needed */
         }
+
         .small-image {
             max-width: 100%;
             /* Adjust the max height as needed */
@@ -40,6 +54,7 @@ body {
         .component {
             margin: 30px;
         }
+
         .big-image {
             max-width: 90%;
             /* Adjust the max height as needed */
