@@ -30,11 +30,13 @@ body {
         border-bottom: 4px solid #BE2E37;
         transition: border-color 0.3s;
     }
+
     .latest-image:hover {
-        border-color: #ff6600; /* Add a glowing effect using a box shadow */
+        border-color: #ff6600;
+        /* Add a glowing effect using a box shadow */
     }
 
-    .read-more{
+    .read-more {
         text-decoration: none;
         border-bottom: 2px solid #BE2E37;
         line-height: 3;
@@ -42,7 +44,8 @@ body {
     }
 
     .read-more:hover {
-        border-color: #ff6600; /* Add a glowing effect using a box shadow */
+        border-color: #ff6600;
+        /* Add a glowing effect using a box shadow */
     }
 }
 
