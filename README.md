@@ -35,7 +35,7 @@ To build the project for production, run the following command:
 bash
 npm run build
 
-Project Structure
+## Project Structure
 
 The project consists of a single HTML file (index.html), along with a CSS file (styles.css) and a JavaScript file (scripts.js).
 index.html
@@ -56,7 +56,7 @@ Usage
 
 To view the web page, simply open the follow the installation instructions mentioned above. You can interact with the image gallery by clicking on an image to view it in a modal.
 
-Dependencies
+## Dependencies
 
 This project uses the following external libraries:
 
