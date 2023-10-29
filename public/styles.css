@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('/assets/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+}
+
+body {
+    background-color: #0F1414;
+    color: #ffffff;
+    font-family: 'OpenSans-Light';
+
+    .component {
+        margin: 180px 150px;
+    }
+
+}
+@media (max-width: 992px) {
+    body {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 765px) {
+    body {
+        .component {
+            margin: 30px;
+        }
+        .big-image {
+            max-width: 100%;
+            /* Adjust the max height as needed */
+        }
+        .small-image {
+            max-width: 100%;
+            /* Adjust the max height as needed */
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        .component {
+            margin: 30px;
+        }
+        .big-image {
+            max-width: 90%;
+            /* Adjust the max height as needed */
+        }
+
+        .small-image {
+            max-width: 90%;
+            /* Adjust the max height as needed */
+        }
+    }
+}
